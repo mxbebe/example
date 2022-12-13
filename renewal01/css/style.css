@@ -1,0 +1,606 @@
+*{margin: 0; padding: 0;}
+ul{list-style:none;}
+a{text-decoration: none; color:inherit}
+.clearfix::after{/*클리어픽스핵*/
+  content:"";
+  display: block;
+  clear: both;
+}
+@font-face {
+  font-family: 'KoPubWorld Dotum Medium';
+  src: url('../font/KoPubWorld\ Dotum\ Medium.ttf') format('truetype');
+}
+body{
+  width: 1920px;
+  margin: auto;
+  font-family: 'KoPubWorld Dotum Medium';
+}
+
+
+/*로그인바*/
+#login{
+  min-width: 1180px;
+  height: 40px;
+  background-color: #4e4e4e;
+  color: #fff;
+  
+}
+#login > .wrap{
+ width: 360px;
+ float: right;
+ margin-right: 51px;
+}
+
+.login_txt > li{
+  float:left;
+  font-size: 15px;
+  line-height: 40px;
+  margin-right: 27px;
+}
+.sns_btn > li{
+  float: left;
+  margin-right: 7px;
+  padding-top: 10px;
+}
+
+/*메뉴*/
+#menu{
+  width: 100%;
+  height: 80px;
+  color: #4e4e4e;
+}
+.menu_wrap{
+  width: 1180px;
+  height: 40px;
+  float:right;
+}
+.logo{
+  float:left;
+  height: 80px;
+  line-height: 80px;
+  margin-top: 8px;
+  padding-left: 36px;
+  padding-right: 70px;
+}
+
+.menu_txt li{
+  float:left;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 45px;
+  line-height: 80px;
+}
+
+.menu_txt li:hover{
+  color: #fbcb37;
+}
+.colorbox{
+  background-color: #fbcb37;
+  width: 450px;
+  height: 80px;
+  float: right;
+}
+.search-bar{
+  position: absolute;
+  width: 246px;
+  height: 40px;
+  border: solid 4px #fbcb37;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  opacity: 1;
+  margin-top: 16px;
+  margin-left: 980px;
+  padding-left: 15px;
+  
+}
+
+.search-bar_input {
+  width: 246px;
+  height: 40px;
+  border: none;
+  -webkit-appearance: none;
+  margin-left: 15px;
+  overflow: auto;
+  z-index: -1;
+  font-size: 15px;
+}
+
+.search-bar_input:focus {
+  outline: none;
+  width: 300px;
+  text-align: left;
+}
+
+.fa-search {
+  font-size: 15px;
+}
+
+/*banner*/
+#imgSlide{
+ width: 1920px;
+ height: 800px;
+ margin: auto;
+}
+
+/*명소*/
+
+#place{
+  width: 1920px;
+  height: 400px;
+}
+.photo{
+  width: 1428px;
+  margin: auto;
+  text-align: center;
+  margin-top: 150px;
+}
+.photo >li{
+  width: 140px;
+  height: 188px;
+  float: left;
+  margin-right: 64px;
+  font-weight: bold;
+  color: #4e4e4e;
+}
+.photo > li img{
+  margin-bottom: 27px;
+  border-radius: 50%;
+}
+.photo > li img:hover{
+  opacity: 0.8;
+}
+
+/*강화둘러보기*/
+#walking{
+  width: 100%;
+  min-width:1180px;
+  height: 580px;
+  position:relative;
+}
+
+#walking > .bg{
+  width: 1061px;
+  height: 440px;
+  background-color: #fbcb37;
+  position: absolute;
+  top:0px;
+  right: 0px;
+}
+#walking > .wrap{
+  width:1190px;
+  height:580px;
+  margin:auto;
+  position:relative;
+  z-index: 1;
+}
+.txtbox{
+  width:280px;
+  float: left;
+}
+.title1{
+  font-family: "나눔손글씨 붓";
+  display: flex;
+}
+.title1 h1{
+  font-size: 65px;
+  color: #6b5e37;
+}
+.title1 h2{
+  font-size: 45px;
+  color: #4e4e4e;
+  margin-top: 12px;
+  margin-left: 5px;
+}
+.menubox{
+  width: 233px;
+  height: 335px;
+  margin-top: 60px;
+  float: left;
+}
+.menubox > li{
+  border-bottom: 1px solid #4e4e4e;
+  box-sizing: border-box;
+  text-align: right;
+  font-size: 23px;
+  margin-top: 20px;
+}
+.menubox > li:hover{
+  color: #6b5e37;
+  font-weight: bold;
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
+.contain{
+  width:900px;
+  height: 480px;
+  color: #4e4e4e;
+  margin-right: 0;
+  float:left;
+  position: relative;
+}
+.contain > img{
+  margin-top: 40px;
+}
+.place_txt{
+ position: absolute;
+ width: 340px;
+ top: 80px;
+ left: 520px;
+ 
+ }
+.place_txt h2{
+  font-family: "나눔손글씨 붓";
+  font-size: 36px;
+}
+.place_txt P{
+  width: 326px;
+  height: 208px;
+  margin-top: 33px;
+  text-align: justify;
+}
+
+.place_txt > button{
+  border: none;
+  color: #6b5e37;
+  font-family: 'KoPubWorld Dotum Medium';
+  font-size: 18px;
+  font-weight: bold;
+  background-color: transparent;
+  float: right;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.place_txt > button:hover{
+  color:#4e4e4e;
+  transform: scale(1.05);
+}
+
+/*강화테마여행*/
+#tour{
+  width: 100%;
+  height: 1160px;
+  background-image: url(../img/bg.jpg);
+  text-align: center;
+  margin-bottom: 240px;
+}
+#tour > .wrap{
+  width: 772px;
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.title2{
+  width: 250px;
+  font-family: "나눔손글씨 붓";
+  display: flex;
+  margin: auto;
+  padding-bottom: 60px;
+  
+}
+.title2 h1{
+  font-size: 65px;
+  color: #527904;
+}
+.title2 h2{
+  font-size: 45px;
+  color: #4e4e4e;
+  margin-top: 12px;
+  margin-left: 5px;
+}
+.tourbtn{
+  width: 772px;
+  height: 120px;
+  text-align: center;
+  
+}
+.tourbtn > button{
+  width: 250px;
+  height: 60px;
+  background-color: #fff;
+  border: 2px solid #6b5e37;
+  display: block;
+  float: left;
+  cursor: pointer;
+  font-size: 21px;
+  font-family: 'KoPubWorld Dotum Medium';
+
+}
+.tourbtn > button:nth-child(1),
+.tourbtn > button:nth-child(2),
+.tourbtn > button:nth-child(3){
+  border-bottom: none;
+}
+.tourbtn > button:nth-child(1),
+.tourbtn > button:nth-child(2),
+.tourbtn > button:nth-child(4),
+.tourbtn > button:nth-child(5){
+  border-right: none;
+}
+.tourbtn > button:hover{
+  background-color: #fbcb37;
+}
+
+.stemp_tour{
+  position: relative;
+}
+.stemp_tour > button{
+  position: absolute;
+  border: none;
+  color: #6b5e37;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+  bottom: 60px;
+  right: 520px;
+}
+.stemp_tour > button:hover{
+  color:#4e4e4e;
+  transform: scale(1.05);
+}
+
+/*강화 문화행사*/
+#festival{
+  width: 100%;
+  min-width:1180px;
+  height: 480px;
+  position:relative;
+  margin-bottom: 220px;
+}
+#festival > .bg{
+  width: 990px;
+  height: 480px;
+  background-color: #d2d29d;
+  position: absolute;
+  top:0px;
+  left: 0px;
+}
+#festival > .wrap{
+  width:1180px;
+  margin:auto;
+  position:relative;
+  z-index: 1;
+}
+.contents{
+  float: left;
+  width: 750px;
+  height: 355px;
+  margin-top: 63px;
+  margin-left: 20px;;
+  cursor: pointer;
+}
+.contents > img:nth-child(1){
+  margin-bottom: 36.5px;
+}
+.contents > img:nth-child(2){
+  margin: 0 30px;
+  margin-bottom: 36.5px;
+}
+.contents > img:hover{
+  transform: scale(1.1);
+}
+.festival_text{
+  width: 400px;
+  height: 480px;
+  float: right;
+  margin-left: 10px;
+  position: relative;
+}
+.title3{
+  font-family: "나눔손글씨 붓";
+  display: flex;
+  margin-bottom: 50px;
+}
+.title3 h1{
+  font-size: 65px;
+  color: #6b5e37;
+}
+.title3 h2{
+  font-size: 45px;
+  color: #4e4e4e;
+  margin-top: 12px;
+  margin-left: 5px;
+}
+.festival_text > .txt{
+  line-height: 35px;
+}
+.txt h2{
+  margin-left: 22px;
+  color: #6b5e37;
+  font-size: 30px;
+  margin-bottom: 40px;
+} 
+.txt p{
+  width: 356px;
+  font-size: 21px;
+  margin-left: 22px;
+  text-align: justify;
+}
+
+/*아이콘*/
+#btn{
+  width: 1920px;
+  height: 195px;
+  background-color: #f0f0f0;
+  text-align: center;
+  margin-bottom: 220px;
+}
+#btn > .wrap{
+  width: 1170px;
+  height: 195px;
+  margin: auto;
+ }
+#btn > .wrap li{
+  width: 195px;
+  height: 195px;
+  float: left;
+}
+#btn > .wrap li img{
+  margin-top: 37.5px;
+}
+#btn > .wrap li:nth-child(1),
+#btn > .wrap li:nth-child(3),
+#btn > .wrap li:nth-child(5){
+  background-color: #dcd6c7;
+}
+#btn > .wrap li:nth-child(2),
+#btn > .wrap li:nth-child(4),
+#btn > .wrap li:nth-child(6){
+  background-color: #feeaab;
+}
+#btn > .wrap li a{
+  width: 160px;
+  height: 120px;
+}
+#btn > .wrap li:hover{
+  opacity: 0.9 ;
+}
+
+/*하단*/
+
+#info{
+  width: 1920px;
+}
+#info > .wrap{
+  width: 1180px;
+  height: 290px;
+  display: flex;
+  margin: auto;
+}
+#info > .wrap > img{
+  border-right: 1px solid #d7d7d7;
+}
+.food{
+  width: 450px;
+  background-color: antiquewhite;
+  padding: 35px;
+  position: relative;
+}
+.food h2{
+  font-family: "나눔손글씨 붓";
+  font-size: 28px;
+  color: #6b5e37;
+  margin-bottom: 30px;
+}
+.food_box{
+  display: flex;
+}
+.food_txt{
+  height: 150px;
+  position: absolute;
+  right: 43px;
+  top: 64px;
+  text-align: justify;
+}
+
+.food h3{
+  font-size: 16px;
+  margin-bottom: px;
+
+}
+.food_txt p{
+  width: 200px;
+  height: 140px;
+  font-size: 15px;
+}
+
+.inforbox{
+  width: 400px;
+  height: 290px;
+}
+.info1, .info2{
+  height: 144px;
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+}
+.info1{
+  border-bottom: none;
+}
+.info1 > .txt1{
+  margin-top: 29px;
+  margin-left: 40px;
+}
+.info1 span{
+  color: #fb7e19;
+  font-size: 24px;
+  font-weight: bold;
+}
+.info2{
+  display: flex;
+  position: relative;
+  
+}
+.info2 span{
+  color: #799427;
+  font-size: 24px;
+  font-weight: bold;
+}
+.info_txt{
+  margin-top: 24px;
+  margin-left: 40px;
+}
+.info2 button{
+  width: 90px;
+  height: 90px;
+  right: 40px;
+  top: 27px;
+  position: absolute;
+  background-color: #527904;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+.info2 button:hover{
+  opacity: 0.9;
+}
+
+/*footer*/
+footer{
+  width: 1920px;
+  border-top: 1px solid #d7d7d7;
+  color:#4e4e4e;
+  font-size: 15px;
+  
+}
+footer > .wrap{
+  width: 1180px;
+  margin: auto;
+  display: flex;
+  margin: 40px auto;
+}
+.footer_txt{
+  margin-left: 25px;
+}
+.box1{
+  display: flex;
+}
+
+.select_box select{
+  width: 140px;
+  height: 25px;
+}
+.select_box button{
+  width: 35px;
+  height: 25px;
+}
+.txt1{
+  margin-bottom: 15px;
+}
+.txt1 > li{
+  float: left;
+  border-right: 1px solid #d7d7d7;
+  margin-right: 16px;
+  padding-right: 16px;
+}
+.txt1 > li:last-child{
+  border-right: none;
+  width: 140px;
+  height: 20px;
+}
+
+
